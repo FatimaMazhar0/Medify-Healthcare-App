@@ -14,12 +14,13 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 import java.util.concurrent.TimeUnit;
+import com.example.healthcareproject.BuildConfig;
 
 public class AIHealthService {
 
     // Groq API Configuration
     private static final String GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
-    private static final String GROQ_API_KEY = "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";
+    private static final String GROQ_API_KEY = BuildConfig.GROQ_API_KEY;
 
     // Available Groq LLaMA Models:
     // "llama-3.1-8b-instant" - Fast and efficient (Recommended)
